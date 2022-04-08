@@ -1,0 +1,20 @@
+{
+  "name": "weather-api",
+  "version": "1.0.0",
+  "description": "Weather application using open weather API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yash Jain",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "geolocator": "^2.1.5",
+    "https": "^1.0.0",
+    "iplocation": "^7.2.0",
+    "ipware": "^2.0.0"
+  }
+}
