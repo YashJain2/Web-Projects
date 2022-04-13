@@ -78,5 +78,35 @@
                 content:'CONTACT';
             }
         }
+
+        a.active{
+            svg{
+                color: #f08c34;
+            }
+        }
+    }
+
+    ul{
+        display: block;
+        padding: 0;
+        list-style: none;
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+        text-align: center;
+        li{
+            font-size: 15px;
+            a{
+                display: block;
+                line-height: 40px;
+                height: 30px;
+                position: relative;
+                text-decoration: none;
+
+                &:hover svg{
+                    color: #f08c34;
+                }
+            }
+        }
     }
 }

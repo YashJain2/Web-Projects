@@ -3,7 +3,8 @@ import './index.scss'
 import Logoy from "../../assets/images/logo-y-1.png";
 import LogoSubtitle from "../../assets/images/logo-sub.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faHome, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faHome, faMailForward, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const Sidebar = () => {
   return (
@@ -23,6 +24,28 @@ const Sidebar = () => {
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e"/>
         </NavLink>
       </nav>
+      <ul>
+        <li>
+          <a target="_blank"  rel='noreferrer' href='https://www.linkedin.com/in/yash-jain-5142121a4/' alt="Link to LinkedIn">
+            <FontAwesomeIcon icon ={faLinkedin} color="#4d4d4e"/>
+          </a>
+        </li>
+        <li>
+          <a target="_blank"  rel='noreferrer' href='https://github.com/YashJain2/' alt="Link to Github">
+            <FontAwesomeIcon icon ={faGithub} color="#4d4d4e"/>
+          </a>
+        </li>
+        <li>
+          <a target="_blank"  rel='noreferrer' href='https://www.instagram.com/yashjain2005/' alt="Link to Instagram">
+            <FontAwesomeIcon icon ={faInstagram} color="#4d4d4e"/>
+          </a>
+        </li>
+        <li>
+          <a target="_blank"  rel='noreferrer' href='mailto:yjain8958372013@gmail.com' alt="Link to Gmail">
+            <FontAwesomeIcon icon ={faMailForward} color="#4d4d4e"/>
+          </a>
+        </li>
+      </ul>
     </div>
   )
 }
