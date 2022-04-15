@@ -66,7 +66,27 @@
         border: 1px solid #f08c34;
         margin-top: 20px;
         float: left;
-        animation: fadeIn 1s 1.5s backwards;
+        animation: rotateIn 1s 2s linear both;
+        // animation: fadeIn 1s 1.5s backwards;
         white-space: nowrap;
+
+        &:hover{
+            color: #fff;
+            background-color: #f08c34;
+            animation: fadeIn 2s 1.5s linear inwards;
+        }
     }
+    .lottie{
+        width: 100%;
+        position: absolute;
+        left: 540px;
+        top:-130px;
+        margin:auto;
+        padding: auto;
+        text-align: right;
+        animation: fadeIn 2s 3s backwards;
+        // width: '300px';
+        // height: '300px'
+    }
+
 }
