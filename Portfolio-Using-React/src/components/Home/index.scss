@@ -73,20 +73,7 @@
         &:hover{
             color: #fff;
             background-color: #f08c34;
-            animation: fadeIn 2s 1.5s linear inwards;
+            // animation: fadeIn 2s 1.5s linear inwards;
         }
     }
-    .lottie{
-        width: 100%;
-        position: absolute;
-        left: 540px;
-        top:-130px;
-        margin:auto;
-        padding: auto;
-        text-align: right;
-        animation: fadeIn 2s 3s backwards;
-        // width: '300px';
-        // height: '300px'
-    }
-
 }

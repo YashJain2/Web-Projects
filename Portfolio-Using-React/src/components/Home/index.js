@@ -1,32 +1,23 @@
 import "./index.scss";
 import LogoTitle from "../../assets/images/home-image-4.png";
 import { Link } from "react-router-dom";
-import Lottie from "react-lottie";
-import animationData from "../../lottie/lottie-2.json";
 import { useEffect, useState } from "react";
 import AnimatedLetters from "../AnimatedLetters";
-
+import Logo from "./Logo/index.js";
 
 const Home = () => {
 
     const [letterClass,setLetterClass] = useState('text-animate');
     const nameArray = ['a','s','h'];
     const jobArray = ['w','e','b', ' ','d','e','v','e','l','o','p','e','r','.'];
-
     useEffect(()=>{
-        return setTimeout(()=>{
-            setLetterClass('text-animate');
-        },4000);
-    })
-    
-    const defaultOptions = {
-        loop: true,
-        autoplay: true,
-        animationData: animationData,
-        rendererSettings: {
-          preserveAspectRatio: "xMidYMid slice"
+        async function timeOut(){
+            return setTimeout(()=>{
+                setLetterClass('text-animate-hover');
+            },4000);
         }
-      };
+        timeOut();
+    },[]);
 
     return(
         <div className="container home-page">
@@ -34,38 +25,27 @@ const Home = () => {
                 <h1>
                 <span className={`${letterClass}`}>H</span>
                 <span className={`${letterClass} _10`}>i,</span>
-
                 <br/>
                 <span className={`${letterClass} _11`}>I</span>
                 <span className={`${letterClass} _12`}>'m</span>
-    
                 <img src={LogoTitle} alt="My name is yash"/>
-
                 <AnimatedLetters letterClass={letterClass}
                     strArray={nameArray}
-                    idx={15}
+                    idx={13}
                 />
-
                 <br/>
                 <AnimatedLetters letterClass={letterClass}
                     strArray={jobArray}
-                    idx={22}
+                    idx={16}
                 />
-
                 </h1>
-
                 <h2>
                     MERN Developer | UI-UX Designer | Compettive Programmer
                 </h2>
-
-                <Link to="/contact" className="contact-button">Contact Me</Link>
-                <div className="lottie">
-                    <Lottie options={defaultOptions}/>  
-                </div>
-                    
+                <Link to="/contact" className="contact-button">Contact Me</Link>    
             </div>
+            <Logo/>
         </div>
     );
 }
-
 export default Home;
